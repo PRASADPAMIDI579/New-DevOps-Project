@@ -1,1 +1,3 @@
-# New-DevOps-Project
+#/bin/bash
+
+components/$1.sh 
