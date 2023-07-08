@@ -12,7 +12,7 @@ if [ -z "${INSTANCE_NAME}" ]; then
 
 
 
-AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=Amazon Linux 2023 AMI" --query 'Images[*].[ImageId]' --output text)
+AMI_ID=$(aws ec2 describe-images --filters "Name=name,Values=al2023-ami-2023.1.20230705.0-kernel-6.1-x86_64" --query 'Images[*].[ImageId]' --output text)
 if [ -z "${AMI_ID}" ]; then
   echo -e "\e[1;32mUnable to find AMI_ID\e[0m"
   else
